@@ -10,29 +10,29 @@ int main()
 	SetConsoleOutputCP(1251);
 
 	float n = 0;
-	printf("Введите число (n): \n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® (n): \n");
 	scanf_s("%f", &n);
 	printf("\n");
 
 	float m = 0;
-	printf("Введите число (m): \n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® (m): \n");
 	scanf_s("%f", &m);
 	printf("\n");
 
-	printf("1) S=1+2+...+n \n");
-	printf("2) F=1*2*...*n \n");
-	printf("3) A=m+(m+1)+...+(m+n) \n");
-	printf("4) B=m*(m+1)*...*(m+n) \n");
-	printf("5) Y=1+1/2+1/3+...+1/n \n");
-	printf("6) X=1/m+1/(m+1)+...+1/(m+n) \n");
-	printf("7) S=1+1*2+1*2*3+1*2*3*4+...+1*2*3*...*n \n");
+	printf("a) S=1+2+...+n \n");
+	printf("Р±) F=1*2*...*n \n");
+	printf("РІ) A=m+(m+1)+...+(m+n) \n");
+	printf("Рі) B=m*(m+1)*...*(m+n) \n");
+	printf("Рґ) Y=1+1/2+1/3+...+1/n \n");
+	printf("Рµ) X=1/m+1/(m+1)+...+1/(m+n) \n");
+	printf("Р¶) S=1+1*2+1*2*3+1*2*3*4+...+1*2*3*...*n \n");
 
 	char c;
 	scanf_s(" %c", &c);
 	
 	switch (c)
 	{
-	case 'а':
+	case 'Г ':
 	{
 		float S = 0;
 		for (int i = 0; i < n; i++)
@@ -44,7 +44,7 @@ int main()
 		break;
 	}
 
-	case 'б':
+	case 'ГЎ':
 	{
 		int F = 1;
 		for (int i = 1; i <= n; i++)
@@ -56,7 +56,7 @@ int main()
 		break;
 	}
 
-	case 'в':
+	case 'Гў':
 	{
 
 		float A = 0;
@@ -71,7 +71,7 @@ int main()
 		break;	
 	}
 
-	case 'г':
+	case 'ГЈ':
 	{
 		float B = 1;
 		int i = 0;
@@ -84,7 +84,7 @@ int main()
 		printf("%f", B);
 		break;
 	}
-	case 'д':
+	case 'Г¤':
 	{
 
 		float Y = 0;
@@ -98,7 +98,7 @@ int main()
 
 	}
 
-	case 'е':
+	case 'ГҐ':
 	{
 
 		float X = 0;
@@ -114,7 +114,7 @@ int main()
 
 	}
 
-	case 'ж':
+	case 'Г¦':
 	{
 		float S = 1;
 		int i = 1;
@@ -130,7 +130,7 @@ int main()
 
 		default:
 		{
-			printf("Ошибка ввода!");
+			printf("ГЋГёГЁГЎГЄГ  ГўГўГ®Г¤Г !");
 			break;
 		}
 	}
